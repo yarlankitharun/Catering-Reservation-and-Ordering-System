@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+          <a href="index.html">Home</a>
+          <a href="product.html">View Products</a>
+          <a href="cart.html">View Cart</a>
+          <a href="orders.html">My Orders</a>
+          <a href="admin.html">Admin Panel</a>
+           
+        </div>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+      </nav>
+    <h1>📦 My Orders</h1>
+    <button onclick="logout()">Logout</button>
+    <div id="ordersList">Loading orders...</div>
+  
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="orders.js"></script>
+</body>
+</html>

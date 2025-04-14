@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>product list</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html">Home</a>
+      <a href="product.html">View Products</a>
+      <a href="cart.html">View Cart</a>
+      <a href="orders.html">My Orders</a>
+      <a href="admin.html">Admin Panel</a>
+    </div>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </nav>
+  
+  
+  <h1>Products</h1>
+   <div id="product-list"></div>
+   <br>
+     <!-- Categories -->
+  <section id="veg-products">
+    <h2>🍃 Veg</h2>
+    <!-- Veg products will appear here -->
+  </section>
+
+  <section id="nonveg-products">
+    <h2>🍗 Non-Veg</h2>
+    <!-- Non-Veg products will appear here -->
+  </section>
+
+  <section id="dessert-products">
+    <h2>🍰 Desserts</h2>
+    <!-- Dessert products will appear here -->
+  </section>
+  <a href="cart.html">🛒 View Cart</a>
+  <br>
+  <button onclick="goBack()">Go Back</button>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+  <script src="product.js"></script>
+</body>
+</html>
+
+
